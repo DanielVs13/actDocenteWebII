@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "imagen": "assets/ofertas/oferta1.jpg",
+    "titulo": "Puma LDU Oficial 2024",
+    "descripcion": "La camiseta Puma LDU Oficial es parte de la indumentaria del Albo para la temporada 2024."
+  },
+  {
+    "id": 2,
+    "imagen": "assets/ofertas/oferta2.jpg",
+    "titulo": "Camiseta Alterna FEF 24",
+    "descripcion": "La Marathon Camiseta Alterna 1 Copa América FEF 24 es elegante, una camiseta especial para nuestra tricolor, sobria y con alma."
+  },
+  {
+    "id": 3,
+    "imagen": "assets/ofertas/product1.jpg",
+    "titulo": "Adidas Advantage",
+    "descripcion": "Un calzado cómodo y estilizado para el día a día."
+  },
+  {
+    "id": 4,
+    "imagen": "assets/ofertas/product2.jpg",
+    "titulo": "Adidas Tiro League",
+    "descripcion": "Un balón de fútbol resistente, ideal para entrenamientos."
+  }
+]

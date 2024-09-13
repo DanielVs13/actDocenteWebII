@@ -1,0 +1,126 @@
+<div class="container-fluid text-center">
+  <div class="container">
+    <div class="my-4">
+      <img [src]="logo[0]" alt="logo" class="img-fluid w-100" />
+    </div>
+
+    <div id="carouselOfertas" class="carousel slide">
+      <h1>Ofertas</h1>
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselOfertas"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselOfertas"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselOfertas"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div
+          *ngFor="let imagen of imagen"
+          [class]="imagen.id === 1 ? 'carousel-item true, active':'carousel-item'"
+          class="carousel-item"
+        >
+          <img
+            [src]="imagen.imagen"
+            class="d-block w-100"
+            [alt]="imagen.titulo"
+          />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselOfertas"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselOfertas"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+
+    <div id="carouselProductos" class="carousel slide">
+      <h1>Productos</h1>
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselProductos"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselProductos"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselProductos"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div
+          *ngFor="let producto of imagen"
+          [class]="producto.id === 1 ? 'carousel-item true, active':'carousel-item'"
+          class="carousel-item"
+        >
+          <img
+            [src]="producto.imagen"
+            class="d-block w-100"
+            [alt]="producto.titulo"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>{{ producto.titulo }}</h5>
+            <p>{{ producto.descripcion }}</p>
+            <a routerLink="productos" class="btn btn-primary">Detalles del Producto</a>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselProductos"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselProductos"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+  </div>
+</div>
